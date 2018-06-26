@@ -3,5 +3,5 @@ export class Job {
     title: string;
     description: string;
     pay: string;
-    interesting: Array<string>;
+    interested: Array<string>;
 }
