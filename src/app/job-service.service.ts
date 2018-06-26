@@ -10,6 +10,9 @@ import { LISTINGS } from '../assets/listings';
 export class JobServiceService {
 
   constructor() { }
+  addJob(job: Job): void {
+    LISTINGS.unshift(job);
+  }
   getJobs(): Observable<Job[]>{
     return of(LISTINGS);
   }
